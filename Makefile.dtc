@@ -11,6 +11,7 @@ DTC_SRCS = \
 	fstree.c \
 	livetree.c \
 	srcpos.c \
+	treesource_kh.c \
 	treesource.c \
 	util.c
 

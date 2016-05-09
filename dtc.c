@@ -309,7 +309,9 @@ int main(int argc, char *argv[])
 		dt_to_blob(outf, bi, outversion);
 	} else if (streq(outform, "asm")) {
 		dt_to_asm(outf, bi, outversion);
-	} else if (streq(outform, "null")) {
+	} else if (streq(outform, "khyp")) {
+        dt_to_source_kh(outf, bi);
+    } else if (streq(outform, "null")) {
 		/* do nothing */
 	} else {
 		die("Unknown output format \"%s\"\n", outform);

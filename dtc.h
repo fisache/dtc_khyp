@@ -262,6 +262,9 @@ struct boot_info *dt_from_blob(const char *fname);
 void dt_to_source(FILE *f, struct boot_info *bi);
 struct boot_info *dt_from_source(const char *f);
 
+/* Khyp Tree source */
+void dt_to_source_kh(FILE *f, struct boot_info *bi);
+
 /* FS trees */
 
 struct boot_info *dt_from_fs(const char *dirname);
